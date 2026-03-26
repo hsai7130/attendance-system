@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Attendance System</h2>
+
+<input type="text" id="name" placeholder="Enter Name">
+<button onclick="mark()">Mark</button>
+
+<ul id="list"></ul>
+
+<script>
+function mark() {
+    let name = document.getElementById("name").value;
+    let li = document.createElement("li");
+    li.textContent = name + " - Present";
+    document.getElementById("list").appendChild(li);
+}
+</script>
+
+</body>
+</html>
